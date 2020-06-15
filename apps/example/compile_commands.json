@@ -1,0 +1,40 @@
+[
+ {
+  "directory": "/home/seby/dev/mtcp/apps/example",
+  "arguments": [
+   "gcc",
+   "-g",
+   "-O3",
+   "-Wall",
+   "-Werror",
+   "-fgnu89-inline",
+   "-c",
+   "epserver.c",
+   "-DMAX_CPUS=8",
+   "-I./include/",
+   "-I../../util/include",
+   "-I../../mtcp//include",
+   "-I../../util/include"
+  ],
+  "file": "epserver.c"
+ },
+ {
+  "directory": "/home/seby/dev/mtcp/apps/example",
+  "arguments": [
+   "gcc",
+   "-g",
+   "-O3",
+   "-Wall",
+   "-Werror",
+   "-fgnu89-inline",
+   "-c",
+   "epwget.c",
+   "-DMAX_CPUS=8",
+   "-I./include/",
+   "-I../../util/include",
+   "-I../../mtcp//include",
+   "-I../../util/include"
+  ],
+  "file": "epwget.c"
+ }
+]

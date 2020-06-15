@@ -1,0 +1,21 @@
+[
+ {
+  "directory": "/home/seby/dev/mtcp/apps/blue5_proxy",
+  "arguments": [
+   "gcc",
+   "-g",
+   "-O3",
+   "-Wall",
+   "-Werror",
+   "-fgnu89-inline",
+   "-c",
+   "blue5_proxy.c",
+   "-DMAX_CPUS=8",
+   "-I./include/",
+   "-I../../util/include",
+   "-I../../mtcp//include",
+   "-I../../util/include"
+  ],
+  "file": "blue5_proxy.c"
+ }
+]

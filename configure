@@ -6832,7 +6832,7 @@ if test -n "$ac_unrecognized_opts" && test "$enable_option_checking" != no; then
 $as_echo "$as_me: WARNING: unrecognized options: $ac_unrecognized_opts" >&2;}
 fi
 
-ac_config_files="$ac_config_files apps/example/Makefile"
+ac_config_files="$ac_config_files apps/example/Makefile apps/blue5_proxy/Makefile"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -7572,6 +7572,7 @@ do
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
     "mtcp/src/Makefile") CONFIG_FILES="$CONFIG_FILES mtcp/src/Makefile" ;;
     "apps/example/Makefile") CONFIG_FILES="$CONFIG_FILES apps/example/Makefile" ;;
+    "apps/blue5_proxy/Makefile") CONFIG_FILES="$CONFIG_FILES apps/blue5_proxy/Makefile" ;;
 
   *) as_fn_error $? "invalid argument: \`$ac_config_target'" "$LINENO" 5;;
   esac
@@ -9043,6 +9044,7 @@ do
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
     "mtcp/src/Makefile") CONFIG_FILES="$CONFIG_FILES mtcp/src/Makefile" ;;
     "apps/example/Makefile") CONFIG_FILES="$CONFIG_FILES apps/example/Makefile" ;;
+    "apps/blue5_proxy/Makefile") CONFIG_FILES="$CONFIG_FILES apps/blue5_proxy/Makefile" ;;
     "apps/perf/Makefile") CONFIG_FILES="$CONFIG_FILES apps/perf/Makefile" ;;
 
   *) as_fn_error $? "invalid argument: \`$ac_config_target'" "$LINENO" 5;;
@@ -10519,6 +10521,7 @@ do
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
     "mtcp/src/Makefile") CONFIG_FILES="$CONFIG_FILES mtcp/src/Makefile" ;;
     "apps/example/Makefile") CONFIG_FILES="$CONFIG_FILES apps/example/Makefile" ;;
+    "apps/blue5_proxy/Makefile") CONFIG_FILES="$CONFIG_FILES apps/blue5_proxy/Makefile" ;;
     "apps/perf/Makefile") CONFIG_FILES="$CONFIG_FILES apps/perf/Makefile" ;;
     "util/Makefile") CONFIG_FILES="$CONFIG_FILES util/Makefile" ;;
 
@@ -12000,6 +12003,7 @@ do
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
     "mtcp/src/Makefile") CONFIG_FILES="$CONFIG_FILES mtcp/src/Makefile" ;;
     "apps/example/Makefile") CONFIG_FILES="$CONFIG_FILES apps/example/Makefile" ;;
+    "apps/blue5_proxy/Makefile") CONFIG_FILES="$CONFIG_FILES apps/blue5_proxy/Makefile" ;;
     "apps/perf/Makefile") CONFIG_FILES="$CONFIG_FILES apps/perf/Makefile" ;;
     "util/Makefile") CONFIG_FILES="$CONFIG_FILES util/Makefile" ;;
     "io_engine/lib/Makefile") CONFIG_FILES="$CONFIG_FILES io_engine/lib/Makefile" ;;
