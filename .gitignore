@@ -65,3 +65,5 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+!apps/blue5_proxy/config.h

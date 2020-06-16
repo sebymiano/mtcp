@@ -1,0 +1,26 @@
+############### epproxy configuration file ###############
+
+#######################
+# APPLICATION OPTIONS #
+#######################
+
+# proxy to run
+proxy: {
+   # address and port to listen (0.0.0.0 for INADDR_ANY)
+   listen: "0.0.0.0:80",
+
+   # balancing algorithm to use
+   # (any of "roundrobin", "least", "uri", or "single");
+   balance: roundrobin,
+
+   # address and port of a backend server
+   # (there should be a single backend server for "single" mode)
+   backend: {
+      name: "s1",
+      addr: "10.0.0.1:80",
+   },
+
+   # number of pre-established connections per backend server
+   # (e.g., 128 conns/backend server * 2 backend servers = total 256 conns)
+   conn_pool: 0,
+}
