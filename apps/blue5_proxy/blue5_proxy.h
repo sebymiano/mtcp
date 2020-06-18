@@ -1,11 +1,27 @@
 #ifndef BLUE5_PROXY_BLUE5_PROXY_H
 #define BLUE5_PROXY_BLUE5_PROXY_H
 
+#define DEBUG_INFO 0
+#define DEBUG_TRACE 0
+#define USE_MTCP 0
+
 #define MAX_PROXY_NUM          1
 
+#if DEBUG_INFO
 #define TRACE_APP_CUSTOM(f, m...) {                                         \
 	fprintf(stdout, "[%10s:%4d] " f,__FUNCTION__, __LINE__, ##m);    \
     }
+#else
+#define TRACE_APP_CUSTOM(f, m...) (void)0
+#endif
+
+#if DEBUG_TRACE
+#define TRACE_APP_CUSTOM_DEBUG(f, m...) {                                         \
+	fprintf(stdout, "[%10s:%4d] " f,__FUNCTION__, __LINE__, ##m);    \
+    }
+#else
+#define TRACE_APP_CUSTOM_DEBUG(f, m...)	(void)0
+#endif
 
 #include <sys/queue.h>
 #include <stdlib.h>

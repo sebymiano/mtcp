@@ -216,7 +216,7 @@ LoadConfigData(const char *fname)
 					exit(-1);
 				}
 			}
-			else if (depth == 3 && parse_target[depth - 2] == BACKEND) {
+			else if (depth == 2 && parse_target[depth - 1] == BACKEND) {
 				if (!prx_ctx) {
 					TRACE_ERROR("wrong formatting in %s\n", fname);
 					exit(-1);
@@ -254,7 +254,7 @@ LoadConfigData(const char *fname)
 					exit(-1);
 				}
 			}
-			else if (depth == 2 && parse_target[depth - 1] == BACKEND) {
+			else if (depth == 1 && parse_target[depth] == BACKEND) {
 				/* grouped value outside the proxy block -> wrong config file */
                 if (!prx_ctx) {
                     TRACE_ERROR("wrong formatting in %s\n", fname);
@@ -277,7 +277,7 @@ LoadConfigData(const char *fname)
 				/* verify proxy context */
 				ValidateProxyConfig(prx_ctx);				
 			}
-			else if (depth == 2  && parse_target[depth - 1] == BACKEND) {
+			else if (depth == 1  && parse_target[depth] == BACKEND) {
 				/* validate backend entry */
 				ValidateBackendConfig(&prx_ctx->backend);
                 prx_ctx->backend_num++;

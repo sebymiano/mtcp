@@ -1,0 +1,22 @@
+############### epproxy configuration file ###############
+
+#######################
+# APPLICATION OPTIONS #
+#######################
+
+# proxy to run
+proxy: {
+   # address and port to listen (0.0.0.0 for INADDR_ANY)
+   listen: "0.0.0.0:9090",
+
+   # address and port of a backend server
+   # (there should be a single backend server for "single" mode)
+   backend: {
+      name: "s1",
+      addr: "10.0.1.2:8080",
+   },
+
+   # number of pre-established connections per backend server
+   # (e.g., 128 conns/backend server * 2 backend servers = total 256 conns)
+   conn_pool: 0,
+}
